@@ -1,23 +1,46 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <block wx:if="{{canIUseOpenData}}">
-      <view class="userinfo-avatar" bindtap="bindViewTap">
-        <open-data type="userAvatarUrl"></open-data>
-      </view>
-      <open-data type="userNickName"></open-data>
-    </block>
-    <block wx:elif="{{!hasUserInfo}}">
-      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
-    </block>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="below"></view>
+<swiper class="lunbo" autoplay indicator-dots  interval="2000" circular>
+  <swiper-item><image class="lunboitem" mode="aspectFit" src="/assets/images/轮播图@1x.png"></image></swiper-item>
+  <swiper-item><image class="lunboitem" mode="aspectFit" src="/assets/images/轮播图@1x.png"></image></swiper-item>
+</swiper>
+<view class="flight">
+  <view class="flight1">
+    <view>中国</view>
+    <view class="feiji"><image class="fei" src="/assets/images/飞机.png"></image></view>
+    <view>美国</view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="flightext" catchtap="onShoww">立即转运</view>
+</view>
+
+<view class="dBox">
+<view class="box y1">
+  <view class="ytext">转运须知</view>
+  <text class="xtext">流程和注意事项</text>
+  <view class="file">
+    <view class="yuan yuan1"><text style="font-size: 26px; line-height: 60rpx;">></text></view>
+    <view class="chetu"><image class="fei" src="/assets/images/车 (1).png"></image></view>
   </view>
 </view>
+
+<view class="box y2">
+  <view class="ytext">运费估算</view>
+  <text class="xtext">费用心中有数</text>
+  <view class="file">
+    <view class="yuan yuan2"><text style="font-size: 26px; line-height: 60rpx;">></text></view>
+    <view class="jiisuan"><image class="fei" src="/assets/images/计算机.png"></image></view>
+  </view>
+</view>
+</view>
+<view class="textttt">轻松转运</view>
+<view class="liucheng"><image class="fei" src="/assets/images/流程.png"></image></view>
+<view class="cvgoods">
+<view class="fuzhitu"><image class="fei" src="/assets/images/复制.png"></image></view>
+复制仓库地址去购物</view>
+<view class="dizhi">电商平台的收货地址请填写我们</view>
+<view class="kefu"><image class="fei" src="/assets/images/kefu.png"></image></view>
+
+<!-- 立即转运弹出层 -->
+<van-popup show="{{show}}" round position="bottom" custom-style="height: 40%" bind:close="onClose">
+
+</van-popup>

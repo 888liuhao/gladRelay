@@ -1,14 +1,44 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+		"pages/logs/logs",
+		"pages/yhSecurities/yhSecurities",
+		"pages/user/user",
+		"pages/fromInfo/fromInfo"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#13227a",
+    "navigationBarTitleText": "牛马转运",
     "navigationBarTextStyle":"black"
-  },
-  "style": "v2",
+	},
+	"tabBar": {
+		"list": [
+			{
+				"pagePath":"pages/index/index",
+				"text": "首页",
+				"iconPath": "/assets/images/牛.png",
+				"selectedIconPath": "/assets/images/牛 (1).png"
+			},
+			{
+				"pagePath":"pages/yhSecurities/yhSecurities",
+				"text": "优惠卷",
+				"iconPath": "/assets/images/优惠劵 (1).png",
+				"selectedIconPath": "/assets/images/优惠劵.png"
+			},
+			{
+				"pagePath":"pages/fromInfo/fromInfo",
+				"text": "订单",
+				"iconPath": "/assets/images/全部订单.png",
+				"selectedIconPath": "/assets/images/全部订单 (1).png"
+			},
+			{
+				"pagePath":"pages/user/user",
+				"text": "我的",
+				"iconPath": "/assets/images/个人头像.png",
+				"selectedIconPath": "/assets/images/个人头像 (1).png"
+			}
+		]
+	},
   "sitemapLocation": "sitemap.json"
 }

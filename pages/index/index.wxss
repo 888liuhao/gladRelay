@@ -1,19 +1,150 @@
-/**index.wxss**/
-.userinfo {
+.below{
+  background-color: #13227a;
+  width: 140%;
+  height: 500rpx;
+  position: absolute;
+  left: -20%;
+  top: 0;
+  z-index: -1;
+  content: '';
+  border-radius: 0 0 50% 50%;
+}
+.lunbo{
+  padding: 0 20rpx;
+  height: 350rpx;
+}
+.lunboitem{
+  width: 100%;
+  height: 400rpx;
+}
+.flight{
+  width: 650rpx;
+  height: 380rpx;
+  border-radius: 20px;
+  position: relative;
+  margin: auto;
+  margin-top: 40rpx;
+  background-color: #ffffff;
+  box-shadow: 0 0 12px #888888;
+}
+.flight1{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #aaa;
+  justify-content: space-between;
+  font-size: 30px;
+  padding:100rpx 50rpx 0 50rpx;
 }
-
-.userinfo-avatar {
-  overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
+.feiji{
+  width: 92rpx;
+  height: 92rpx;
+}
+.fei{
+  width: 100%;
+  height: 100%;
+}
+.flightext{
+  width: 320rpx;
+  height: 90rpx;
+  color: #ffffff;
+  text-align: center;
+  line-height: 90rpx;
+  border-radius: 10rpx;
+  position: absolute;
+  left: 25%;
+  top: 70%;
+  background-color:#13227a;
+}
+.dBox{
+  margin-top: 40rpx;
+  padding: 0 36rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.box{
+  width: 320rpx;
+  height: 320rpx;
+  border-radius: 30rpx;
+  box-shadow: 0 0 10px #888888;
+}
+.y1{
+  background-color: #9877bb;
+  color: #4e148c;
+}
+.y2{
+  background-color: #fc9d62;
+  color: #ff6200;
+}
+.ytext{
+  font-size: 28px;
+  font-weight: 700;
+  margin: 30rpx 0 10rpx 30rpx;
+}
+.xtext{
+  margin-left: 40rpx;
+  font-size: 14px;
+}
+.file{
+  display: flex;
+  justify-content: space-between;
+}
+.yuan{
+  width: 60rpx;
+  height: 60rpx;
+  color: #ffffff;
+  text-align: center;
   border-radius: 50%;
+  margin: 60rpx 0 0 30rpx;
 }
-
-.usermotto {
-  margin-top: 200px;
+.chetu{
+  width: 180rpx;
+  height: 180rpx;
+}
+.jiisuan{
+  margin-top: 20rpx;
+  margin-right: 6rpx;
+  width: 140rpx;
+  height: 140rpx;
+}
+.yuan1{
+  background-color: #4e148c;
+}
+.yuan2{
+  background-color: #ff6200;
+}
+.textttt{
+  font-size: 32px;
+  font-weight: 600;
+  margin: 30rpx 0 15rpx 36rpx;
+}
+.liucheng{
+  height: 218rpx;
+}
+.cvgoods{
+  margin: 50rpx 40rpx 10rpx 40rpx;
+  height: 100rpx;
+  position: relative;
+  border-radius: 60rpx;
+  background-color: #14237a;
+  font-size: 20px;
+  text-align: center;
+  line-height: 100rpx;
+  color: #ffffff;
+}
+.fuzhitu{
+  width: 50rpx;
+  height: 50rpx;
+  top: 10rpx;
+  left: 16%;
+  position: absolute;
+}
+.dizhi{
+  text-align: center;
+  color: #14237a;
+  margin-bottom: 80rpx;
+}
+.kefu{
+  width: 80rpx;
+  height: 80rpx;
+  position: fixed;
+  bottom: 80rpx;
+  right: 10rpx;
 }
