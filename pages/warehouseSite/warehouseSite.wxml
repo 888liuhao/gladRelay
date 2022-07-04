@@ -1,0 +1,18 @@
+<!--pages/warehouseSite/warehouseSite.wxml-->
+<view class="box">
+  <view class="box1"><view class="dingtu"><image class="fei" src="/assets/images/定位.png"></image></view>仓库地址</view>
+  <view class="pad">
+    <view style="margin-bottom: 30rpx;">收件人:牛马仓库</view>
+    <view class="shouhuo"><view class="shouhuo1">收货地址:</view><view>牛马库牛牛马库牛牛马库牛马仓库牛马仓库</view></view>
+  </view>
+  <view class="pad">联系电话:18000000000</view>
+  <view class="pad">邮政编码:000000</view>
+</view>
+
+<view class="cvgoods" catchtap="onfu">
+<view class="fuzhitu"><image class="fei" src="/assets/images/复制.png"></image></view>
+一键复制仓库地址</view>
+
+<view class="xuzhi">
+  <image class="fei" src="/assets/images/复制地址须知.png"></image>
+</view>

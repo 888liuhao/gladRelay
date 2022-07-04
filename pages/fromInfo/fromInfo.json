@@ -1,3 +1,9 @@
 {
-	"usingComponents": {}
+	"usingComponents": {
+		"van-tab": "../../miniprogram/miniprogram_npm/@vant/weapp/tab/index",
+		"van-tabs": "../../miniprogram/miniprogram_npm/@vant/weapp/tabs/index",
+		"van-empty": "../../miniprogram/miniprogram_npm/@vant/weapp/empty/index",
+		"bill":"../../Component/bill/bill"
+	},
+	"navigationBarTitleText": "我的订单"
 }

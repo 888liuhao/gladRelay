@@ -1,1 +1,6 @@
 /* pages/yhSecurities/yhSecurities.wxss */
+.yhj{
+  height: 240rpx;
+  padding: 30rpx;
+  border-radius: 20rpx;
+}

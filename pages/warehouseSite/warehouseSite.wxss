@@ -1,0 +1,55 @@
+/* pages/warehouseSite/warehouseSite.wxss */
+.box{
+  height: 460rpx;
+  margin: 40rpx;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px #888888;
+}
+.box1{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 20px;
+  padding: 30rpx 0 20rpx 40rpx;
+}
+.dingtu{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 30rpx;
+}
+.shouhuo{
+  display: flex;
+  justify-content:flex-start;
+}
+.shouhuo1{
+  width: 200rpx;
+}
+.pad{
+  padding: 0 50rpx;
+  margin-bottom: 30rpx;
+}
+/* ---------- */
+.cvgoods{
+  margin: 50rpx 40rpx 10rpx 40rpx;
+  height: 100rpx;
+  position: relative;
+  border-radius: 60rpx;
+  background-color: #14237a;
+  font-size: 20px;
+  text-align: center;
+  line-height: 100rpx;
+  color: #ffffff;
+}
+.fuzhitu{
+  width: 50rpx;
+  height: 50rpx;
+  top: 10rpx;
+  left: 16%;
+  position: absolute;
+}
+.xuzhi{
+  width: 700rpx;
+  height: 900rpx;
+  margin:auto;
+  margin-top: 40rpx;
+  margin-bottom: 80rpx;
+}

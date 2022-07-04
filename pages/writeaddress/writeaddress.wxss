@@ -1,0 +1,66 @@
+/* pages/writeaddress/writeaddress.wxss */
+.box {
+  height: 280rpx;
+  margin: 40rpx;
+  background-color: #ffffff;
+  position: relative;
+  box-shadow: 0 0 10px #888888;
+}
+
+.box1 {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 20px;
+  padding: 30rpx 0 20rpx 40rpx;
+}
+
+.dingtu {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 30rpx;
+}
+
+.niuma {
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+}
+
+.niuma2 {
+  margin-top: 30rpx;
+  padding: 0 30rpx;
+  margin-left: 70rpx;
+  font-size: 14px;
+  color: rgba(153, 153, 153, 100);
+}
+
+.van-field__label {
+  font-size: 16px;
+}
+
+.padddd {
+  margin-top: 70rpx;
+}
+
+.xuanzedizhi {
+  width: 150rpx;
+  position: absolute;
+  right: 20rpx;
+  z-index: 100;
+  text-align: center;
+  line-height: 50rpx;
+  height: 50rpx;
+  border-radius: 4px;
+  border: 1px solid rgba(64, 184, 80, 100);
+  color: rgba(64, 184, 80, 100);
+  background-color: rgba(217, 241, 221, 100);
+}
+.flightext{
+  width: 320rpx;
+  height: 90rpx;
+  color: #ffffff;
+  text-align: center;
+  line-height: 90rpx;
+  border-radius: 10rpx;
+  margin: auto;
+  background-color:#13227a;
+}

@@ -1,2 +1,22 @@
-<!--pages/fromInfo/fromInfo.wxml-->
-<text>pages/fromInfo/fromInfo.wxml</text>
+	<view class="custom">
+		<van-tabs animated active="{{active}}" bind:change="onChange" title-inactive-color="#383838" title-active-color="#13227a" color="#13227a">
+			<van-tab wx:for="{{tabs}}" wx:key="index" title="{{item.title}}"></van-tab>
+		</van-tabs>
+	</view>
+
+<view wx:if="{{active == 0}}">
+	<!-- <van-empty image="error" description="描述文字" /> -->
+	<bill wx:for="{{dataInfo}}" wx:key="index" dataD="{{item}}"></bill>
+</view>
+
+<view wx:if="{{active == 1}}">
+	<bill wx:for="{{pppppp}}" wx:key="index" dataD="{{item}}"></bill>
+</view>
+
+<view wx:if="{{active == 2}}">
+	<bill wx:for="{{dataInfo}}" wx:key="index" dataD="{{item}}"></bill>
+</view>
+
+<view wx:if="{{active == 3}}">
+	<bill wx:for="{{pppppp}}" wx:key="index" dataD="{{item}}"></bill>
+</view>

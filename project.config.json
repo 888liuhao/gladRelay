@@ -5,6 +5,7 @@
 		"include": []
 	},
 	"setting": {
+		"checkSiteMap": false,
 		"bundle": false,
 		"userConfirmedBundleSwitch": false,
 		"urlCheck": true,

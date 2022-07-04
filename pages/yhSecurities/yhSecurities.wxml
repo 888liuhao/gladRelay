@@ -1,2 +1,4 @@
 <!--pages/yhSecurities/yhSecurities.wxml-->
-<text>pages/yhSecurities/yhSecurities.wxml</text>
+<view class="yhj" wx:for="{{image}}" wx:key="index">
+  <image class="fei" src="{{item.img}}"></image>
+</view>

@@ -1,66 +1,29 @@
-// pages/fromInfo/fromInfo.js
 Page({
-
-	/**
-	 * 页面的初始数据
-	 */
-	data: {
-
+  data: {
+    tabs: [
+			{title:'全部'},
+			{title:'待支付'},
+			{title:'已支付'},
+			{title:'已完成'},
+		],
+		active: 0,
+		dataInfo:[
+			{orNumber:'20220509140788888888',setout:'中国',destination:'纽约',status:'待入仓',procedure:0},
+			{orNumber:'20220509140712345678',setout:'中国',destination:'伦敦',status:'待填写',procedure:4},
+			{orNumber:'20220509140712345678',setout:'中国',destination:'澳大利亚',status:'待支付',procedure:1},
+			{orNumber:'20220509140712345678',setout:'中国',destination:'泰国',status:'已出仓',procedure:2},
+		],
+		pppppp:[
+			{orNumber:'20220509140712345678',setout:'中国',destination:'伦敦',status:'待填写',procedure:4},
+			{orNumber:'20220509140712345678',setout:'中国',destination:'西班牙',status:'待支付',procedure:1},
+			{orNumber:'20220509140712345678',setout:'中国',destination:'多伦多',status:'已出仓',procedure:2},
+		]
+	},
+	//tabs栏切换
+	onChange(e){
+    this.setData({
+      active:e.detail.index
+    })
 	},
 
-	/**
-	 * 生命周期函数--监听页面加载
-	 */
-	onLoad(options) {
-
-	},
-
-	/**
-	 * 生命周期函数--监听页面初次渲染完成
-	 */
-	onReady() {
-
-	},
-
-	/**
-	 * 生命周期函数--监听页面显示
-	 */
-	onShow() {
-
-	},
-
-	/**
-	 * 生命周期函数--监听页面隐藏
-	 */
-	onHide() {
-
-	},
-
-	/**
-	 * 生命周期函数--监听页面卸载
-	 */
-	onUnload() {
-
-	},
-
-	/**
-	 * 页面相关事件处理函数--监听用户下拉动作
-	 */
-	onPullDownRefresh() {
-
-	},
-
-	/**
-	 * 页面上拉触底事件的处理函数
-	 */
-	onReachBottom() {
-
-	},
-
-	/**
-	 * 用户点击右上角分享
-	 */
-	onShareAppMessage() {
-
-	}
 })

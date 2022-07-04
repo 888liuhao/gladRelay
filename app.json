@@ -4,7 +4,9 @@
 		"pages/logs/logs",
 		"pages/yhSecurities/yhSecurities",
 		"pages/user/user",
-		"pages/fromInfo/fromInfo"
+    "pages/fromInfo/fromInfo",
+    "pages/warehouseSite/warehouseSite",
+    "pages/writeaddress/writeaddress"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -13,6 +15,7 @@
     "navigationBarTextStyle":"black"
 	},
 	"tabBar": {
+    "selectedColor":"#13227a",
 		"list": [
 			{
 				"pagePath":"pages/index/index",

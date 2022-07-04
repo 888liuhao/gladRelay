@@ -1,0 +1,66 @@
+/* Component/bill/bill.wxss */
+.box {
+  height: 310rpx;
+  margin: 40rpx;
+  background-color: #ffffff;
+  position: relative;
+  box-shadow: 0 0 10px #888888;
+}
+.custom{
+	position: fixed;
+	top: 0;
+}
+.dingdanhao{
+	padding: 20rpx 40rpx;
+	font-size: 14px;
+}
+.flight1{
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+	padding: 30rpx 40rpx 16rpx 40rpx;
+	font-size: 22px;
+}
+.feiji{
+  width:62rpx;
+  height: 62rpx;
+}
+.xx{
+	margin: auto;
+	width: 80rpx;
+	font-size: 12px;
+	color: #13227a;
+}
+.boxflightext{
+	display: flex;
+	padding-top: 20rpx;
+	margin-right: 10rpx;
+	flex-direction:row-reverse;
+}
+.flightext{
+	width: 160rpx;
+	font-size: 14px;
+  height: 60rpx;
+  color: #ffffff;
+  text-align: center;
+  line-height: 60rpx;
+	border-radius: 10rpx;
+	margin-right: 10rpx;
+	border: 1px solid #13227a;
+  background-color:#13227a;
+}
+.flightext1{
+	width: 160rpx;
+	font-size: 14px;
+  height: 60rpx;
+	color: red;
+	margin-right: 10rpx;
+	border: 1px solid red;
+  text-align: center;
+	line-height: 60rpx;
+	border-radius: 10rpx;
+}
+.fei{
+	width: 100%;
+	height: 100%;
+}

@@ -34,13 +34,23 @@
 </view>
 <view class="textttt">轻松转运</view>
 <view class="liucheng"><image class="fei" src="/assets/images/流程.png"></image></view>
-<view class="cvgoods">
+<view class="cvgoods" catchtap="onfuzhidizhii">
 <view class="fuzhitu"><image class="fei" src="/assets/images/复制.png"></image></view>
 复制仓库地址去购物</view>
 <view class="dizhi">电商平台的收货地址请填写我们</view>
 <view class="kefu"><image class="fei" src="/assets/images/kefu.png"></image></view>
 
 <!-- 立即转运弹出层 -->
-<van-popup show="{{show}}" round position="bottom" custom-style="height: 40%" bind:close="onClose">
-
+<van-popup show="{{show}}" round position="bottom" custom-style="height: 50%" bind:close="onClose">
+	<view class="qudao">预选渠道</view>
+	<view class="butbox">
+		<button wx:for="{{buttData}}" catchtap="onxuan" data-info="{{item.id}}" wx:key="id" plain="true" class="but"
+		 style="{{item.id == butInfo ? 'color:#ffffff;background:#14237a' : 'color:#14237a;background: #ffffff'}}">{{item.title}}</button>
+	</view>
+	<view class="waitao" >
+		<view class="xaiyibu">
+		<button plain="true" catchtap="onClose" style="flex-grow:1;border: 0;">取消</button>
+		<button plain="true" style="flex-grow:1;border: 0;" catchtap="onaddres">下一步</button>
+		</view>
+	</view>
 </van-popup>

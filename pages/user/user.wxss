@@ -1,1 +1,28 @@
 /* pages/user/user.wxss */
+.gebox{
+	height: 350rpx;
+	background-color: #13227a;
+}
+.toux{
+	width: 170rpx;
+	height: 170rpx;
+	padding-top: 30rpx;
+	padding-bottom: 20rpx;
+	margin: auto;
+}
+.username{
+	text-align: center;
+	font-size: 24px;
+	color: #ffffff;
+	padding-bottom: 20rpx;
+}
+.geuser{
+	height: 200rpx;
+	border-radius: 10px;
+  margin: 30rpx 14rpx 0 14rpx;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px #888888;
+}
+.van-cell{
+	border-radius: 10px;
+}

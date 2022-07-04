@@ -148,3 +148,29 @@
   bottom: 80rpx;
   right: 10rpx;
 }
+.qudao{
+	font-size: 20px;
+	text-align: center;
+	margin-top: 20rpx;
+}
+.waitao{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+.xaiyibu{
+	height: 90rpx;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+.butbox{
+	margin-top: 30rpx;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.but{
+	width: 270rpx;
+	margin-bottom: 30rpx;
+}

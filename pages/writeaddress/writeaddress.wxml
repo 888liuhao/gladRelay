@@ -1,0 +1,23 @@
+<!--pages/writeaddress/writeaddress.wxml-->
+<view class="box">
+  <view class="box1"><view class="dingtu"><image class="fei" src="/assets/images/定位.png"></image></view>仓库地址</view>
+  <text class="niuma">牛马仓库</text>  <text  bindtap="onpon">18000000000  <text style="color: #42b852;">复制</text></text>
+  <view class="niuma2">深圳市龙华区龙华街道工业路壹城环智中心C座2607室</view>
+</view>
+
+<view class="box" style="height: 800rpx;">
+  <view class="box1"><view class="dingtu"><image class="fei" src="/assets/images/定位.png"></image>
+  </view>目标国收件信息</view>
+<view class="xuanzedizhi">选择地址</view>
+<view class="padddd">
+<van-cell-group>
+  <van-field value="{{ name }}" bind:blur="blur" label="Name:" type="textarea" placeholder="请输入留言" autosize border="{{ false }}"/>
+  <van-field value="{{ phone }}" bind:blur="blur" label="Phone:" type="textarea" placeholder="请输入留言" autosize border="{{ false }}"/>
+<van-field value="{{ address }}" label="Address:" type="textarea" placeholder="请输入留言" autosize border="{{ false }}"/>
+  <van-field value="{{ city }}" label="City:" type="textarea" placeholder="请输入留言" autosize border="{{ false }}"/>
+<van-field value="{{postcode}}" label="Postcode:" type="textarea" placeholder="请输入留言" autosize border="{{ false }}"/>
+</van-cell-group>
+</view>
+</view>
+
+<view class="flightext" catchtap="onShoww">立即转运</view>
