@@ -4,12 +4,26 @@
 	<view class="username">牛马仓库</view>
 	<view class="username" style="font-size: 12px;">邀请码：202207045689</view>
 </view>
+<!-- 我的订单 -->
 <view class="geuser">
-	<van-cell title="我的订单" is-link value="全部订单" />
-	<view>
-		<view>待付款</view>
-		<view>代发货</view>
-		<view>待收货</view>
-		<view>待评价</view>
+	<van-cell title="我的订单" is-link value="全部订单" bindtap="allfrom" />
+	<view class="qiianbaobox">
+		<view class="sixiang" wx:for="{{userData}}" wx:key="index" catchtap="dFkuan" data-Info="{{item}}">
+			<view class="sxiangtu"><image class="fei" src="{{item.img}}"></image></view>
+			<view>{{item.title}}</view>
+		</view>
 	</view>
 </view>
+<!-- 其他 -->
+<view class="geuser1">
+	<view class="sixiang1" wx:for="{{moreData}}" wx:key="index" catchtap="qitaxuan" data-otherinfo="{{item}}">
+			<view class="sxiangtu"><image class="fei" src="{{item.img}}"></image></view>
+			<view>{{item.title}}</view>
+	</view>
+</view>
+
+<view class="kefuifuf">
+	<image class="fei" style="border-radius: 10px;" src="/assets/userimg/kefututu.png"></image>
+	<button class="kefuanniu" open-type="contact">1</button>
+</view>
+

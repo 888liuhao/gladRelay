@@ -1,0 +1,4 @@
+
+<van-empty image="/assets/userimg/wuadd.png" description="亲，您还未添加地址信息喔" />
+<view class="flightext" catchtap="onAddress">添加地址</view>
+

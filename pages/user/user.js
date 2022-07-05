@@ -1,66 +1,35 @@
 // pages/user/user.js
 Page({
-
-	/**
-	 * 页面的初始数据
-	 */
 	data: {
-
+		userData:[
+			{title:'待付款',img:'/assets/userimg/qianbao.png'},
+			{title:'代发货',img:'/assets/userimg/peisong.png'},
+			{title:'待收货',img:'/assets/userimg/shouhuo.png'},
+			{title:'待评价',img:'/assets/userimg/haopiing.png'},
+		],
+		moreData:[
+			{title:'我的地址',img:'/assets/images/dingwei.png',url:'/pages/MyAddress/MyAddress'},
+			{title:'优惠卷',img:'/assets/images/sssyouhui.png',url:'/pages/MyDiscount/MyDiscount'},
+			{title:'活动中心',img:'/assets/userimg/huodong.png'},
+			{title:'转运流程',img:'/assets/userimg/buzhou.png'},
+			{title:'转运须知',img:'/assets/userimg/xuzhi.png'},
+			{title:'关于我们',img:'/assets/images/sssniu.png'}
+		]
 	},
-
-	/**
-	 * 生命周期函数--监听页面加载
-	 */
-	onLoad(options) {
-
+	//全部订单
+	allfrom(){
+		wx.switchTab({
+			url: '/pages/fromInfo/fromInfo',
+		})
 	},
-
-	/**
-	 * 生命周期函数--监听页面初次渲染完成
-	 */
-	onReady() {
-
+	//待付款四儿子
+	dFkuan(e){
+		console.log(e.currentTarget.dataset.info);
 	},
-
-	/**
-	 * 生命周期函数--监听页面显示
-	 */
-	onShow() {
-
-	},
-
-	/**
-	 * 生命周期函数--监听页面隐藏
-	 */
-	onHide() {
-
-	},
-
-	/**
-	 * 生命周期函数--监听页面卸载
-	 */
-	onUnload() {
-
-	},
-
-	/**
-	 * 页面相关事件处理函数--监听用户下拉动作
-	 */
-	onPullDownRefresh() {
-
-	},
-
-	/**
-	 * 页面上拉触底事件的处理函数
-	 */
-	onReachBottom() {
-
-	},
-
-	/**
-	 * 用户点击右上角分享
-	 */
-	onShareAppMessage() {
-
+	//其他选项
+	qitaxuan(e){
+		wx.navigateTo({
+			url: e.currentTarget.dataset.otherinfo.url
+		})
 	}
 })

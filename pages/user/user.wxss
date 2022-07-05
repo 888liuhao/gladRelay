@@ -26,3 +26,49 @@
 .van-cell{
 	border-radius: 10px;
 }
+.qiianbaobox{
+	display: flex;
+	justify-content: space-between;
+}
+.sixiang{
+	margin: auto;
+	text-align: center;
+	font-size: 12px;
+}
+.sxiangtu{
+	width: 70rpx;
+	height: 70rpx;
+	margin: auto;
+	color: #a8a8aa;
+}
+.geuser1{
+	height: 340rpx;
+	border-radius: 10px;
+  margin: 30rpx 14rpx 0 14rpx;
+  background-color: #ffffff;
+	box-shadow: 0 0 10px #888888;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap:wrap;
+}
+.sixiang1{
+	width: 180rpx;
+	margin-top: 30rpx;
+	text-align: center;
+	font-size: 12px;
+}
+.kefuifuf{
+	height: 230rpx;
+	border-radius: 10px;
+	position: relative;
+  margin: 10rpx 14rpx 0 14rpx;
+	box-shadow: 0 0 10px #888888;
+}
+.kefuanniu{
+	height: 230rpx;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	opacity:0;
+	z-index: 101;
+}

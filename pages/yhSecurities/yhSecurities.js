@@ -2,9 +2,9 @@
 Page({
 	data: {
 		image:[
-      {img:'/assets/images/图片@1x.png'},
-      {img:'/assets/images/图片 Copy@1x.png'},
-      {img:'/assets/images/图片 Copy 2@1x.png'}
+      {img:'/assets/images/y1.png'},
+      {img:'/assets/images/y2.png'},
+      {img:'/assets/images/y3.png'}
     ]
 	},
 

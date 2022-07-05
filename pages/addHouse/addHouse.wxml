@@ -1,0 +1,21 @@
+<!--pages/addHouse/addHouse.wxml-->
+<view class="padddd">
+	<van-cell-group>
+	<van-field value="{{name}}" bind:blur="blurname" label="Name:" type="textarea" placeholder="{{placeholder.pName}}" autosize error-message="{{nameError}}" />
+	
+	<van-field value="{{ phone }}" bind:blur="blurphone" label="Phone:" type="textarea" placeholder="{{placeholder.pPhone}}" autosize error-message="{{phoneError}}" />
+
+	<van-field value="{{ address }}" label="Address:" bind:blur="bluraddress" type="textarea" placeholder="{{placeholder.pAdd}}" autosize error-message="{{addressError}}" />
+
+	<van-field value="{{ city }}" label="City:" bind:blur="blurcity" type="textarea" placeholder="{{placeholder.pCity}}" autosize error-message="{{cityError}}" />
+
+	<van-field value="{{postcode}}" label="Postcode:" bind:blur="blurpostcode" type="textarea" placeholder="{{placeholder.pPostCode}}" autosize error-message="{{postcodeError}}" />
+
+	<van-field value="{{country}}" label="Country:" bind:blur="blurcountry" type="textarea" placeholder="{{placeholder.pCountry}}" autosize />
+
+	</van-cell-group>
+	<van-cell title="设为默认">
+		<van-switch checked="{{ checked }}" bind:change="onChange" />
+	</van-cell>
+</view>
+<view class="flightext" catchtap="onAddress">添加地址</view>

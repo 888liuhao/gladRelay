@@ -174,3 +174,12 @@
 	width: 270rpx;
 	margin-bottom: 30rpx;
 }
+.kefuanniu{
+	width: 80rpx;
+	position: fixed;
+	z-index: 101;
+	bottom: 80rpx;
+	right: 10rpx;
+	height: 80rpx;
+	opacity:0;
+}

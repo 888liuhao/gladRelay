@@ -1,0 +1,16 @@
+/* pages/addHouse/addHouse.wxss */
+/* .van-cell{
+	height: 100rpx;
+	line-height: 100rpx;
+} */
+.flightext{
+  width: 320rpx;
+  height: 80rpx;
+  color: #ffffff;
+  text-align: center;
+	line-height: 80rpx;
+	margin: auto;
+	margin-top: 50rpx;
+  border-radius: 10rpx;
+  background-color:#13227a;
+}

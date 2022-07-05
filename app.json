@@ -6,7 +6,11 @@
 		"pages/user/user",
     "pages/fromInfo/fromInfo",
     "pages/warehouseSite/warehouseSite",
-    "pages/writeaddress/writeaddress"
+		"pages/writeaddress/writeaddress",
+		"pages/destination/destination",
+		"pages/MyAddress/MyAddress",
+		"pages/addHouse/addHouse",
+		"pages/MyDiscount/MyDiscount"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -20,26 +24,26 @@
 			{
 				"pagePath":"pages/index/index",
 				"text": "首页",
-				"iconPath": "/assets/images/牛.png",
-				"selectedIconPath": "/assets/images/牛 (1).png"
+				"iconPath": "/assets/images/niu.png",
+				"selectedIconPath": "/assets/images/sssniu.png"
 			},
 			{
 				"pagePath":"pages/yhSecurities/yhSecurities",
-				"text": "优惠卷",
-				"iconPath": "/assets/images/优惠劵 (1).png",
-				"selectedIconPath": "/assets/images/优惠劵.png"
+				"text": "活动",
+				"iconPath": "/assets/images/youhui.png",
+				"selectedIconPath": "/assets/images/sssyouhui.png"
 			},
 			{
 				"pagePath":"pages/fromInfo/fromInfo",
 				"text": "订单",
-				"iconPath": "/assets/images/全部订单.png",
-				"selectedIconPath": "/assets/images/全部订单 (1).png"
+				"iconPath": "/assets/images/ding.png",
+				"selectedIconPath": "/assets/images/sssding.png"
 			},
 			{
 				"pagePath":"pages/user/user",
 				"text": "我的",
-				"iconPath": "/assets/images/个人头像.png",
-				"selectedIconPath": "/assets/images/个人头像 (1).png"
+				"iconPath": "/assets/images/tou.png",
+				"selectedIconPath": "/assets/images/ssstou.png"
 			}
 		]
 	},

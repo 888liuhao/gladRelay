@@ -1,0 +1,13 @@
+<!--pages/destination/destination.wxml-->
+<van-search
+  value="{{ value }}" placeholder="请输入地区关键词" show-action bind:change="changeOn" bind:cancel="onCancel"/>
+
+<van-index-bar z-index highlight-color>
+	<block wx:for="{{countryInfo}}" wx:key="index">
+		<van-index-anchor index="{{index}}" />
+		<view class="wenzi" wx:for="{{item}}" wx:key="index" bindtap="onAlternate" data-info="{{item}}">
+			<view>{{item.nation}}</view>
+			<view class="wenzihuii">{{item.egnation}}</view>
+		</view>
+	</block>
+</van-index-bar>
