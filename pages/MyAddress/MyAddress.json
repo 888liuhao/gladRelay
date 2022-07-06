@@ -1,5 +1,8 @@
 {
 	"usingComponents": {
-		"van-empty": "../../miniprogram/miniprogram_npm/@vant/weapp/empty/index"
+		"van-empty": "../../miniprogram/miniprogram_npm/@vant/weapp/empty/index",
+		"van-checkbox": "../../miniprogram/miniprogram_npm/@vant/weapp/checkbox/index",
+		"van-checkbox-group": "../../miniprogram/miniprogram_npm/@vant/weapp/checkbox-group/index",
+		"van-icon": "../../miniprogram/miniprogram_npm/@vant/weapp/icon/index"
 	}
 }

@@ -54,4 +54,16 @@ Page({
 			url: '/pages/destination/destination',
 		})
 	},
+	//估算运费
+	onjisuan(){
+		wx.navigateTo({
+			url: '/pages/reckon/reckon',
+		})
+	},
+	//转运须知
+	onxuzhi(){
+		wx.navigateTo({
+			url: '/pages/notice/notice',
+		})
+	}
 })

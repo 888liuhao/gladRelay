@@ -2,136 +2,153 @@
 import Toast from '../../miniprogram/miniprogram_npm/@vant/weapp/toast/index';
 Page({
 	data: {
-		checked:"false",
-		placeholder:{pName:'Please enter the name',pPhone:'Please enter the phone',pAdd:'Please enter the address',
-		             pCity:'Please enter the city',pPostCode:'Please enter the postCode',pCountry:'Please enter the country'},
-		name:'',
-		phone:'',
-		address:'',
-		city:'',
-		postcode:'',
-		country:'',
-		addresData:{},
+		checked: 'false',
+		placeholder: {
+			pName: 'Please enter the name',
+			pPhone: 'Please enter the phone',
+			pAdd: 'Please enter the address',
+			pCity: 'Please enter the city',
+			pPostCode: 'Please enter the postCode',
+			pCountry: 'Please enter the country'
+		},
+		name: 'qeq',
+		phone: '15218097467',
+		address: 'weqe',
+		city: 'ewqeeq',
+		postcode: '123456',
+		country: 'eeqwe',
+		addresData: {},
 		//输入错误提示
-		nameError:'',
-		phoneError:'',
-		addressError:'',
-		cityError:'',
-		postcodeError:'',
-		countryError:'',
+		nameError: '',
+		phoneError: '',
+		addressError: '',
+		cityError: '',
+		postcodeError: '',
+		countryError: '',
 	},
 	//是否默认
-	onChange({ detail }) {
-		this.setData({ checked: detail });
+	onChange({
+		detail
+	}) {
+		this.setData({
+			checked: detail
+		});
 	},
 	//表单数据
-	blurname(e){
+	blurname(e) {
 		let reg = /^[A-Za-z0-9]+$/
 		let newname = reg.test(e.detail.value) ? e.detail.value : false
-		if(newname == false){
+		if (newname == false) {
 			this.setData({
-				nameError:'The name consists of a-z or A-Z',
-				name:''
+				nameError: 'The name consists of a-z or A-Z',
+				name: ''
 			})
-		}else{
+		} else {
 			this.setData({
-			name:newname,
-			nameError:''
-		})
+				name: newname,
+				nameError: ''
+			})
 		}
 	},
-	blurphone(e){
+	blurphone(e) {
 		let reg = /^(?:(?:\+|00)86)?1(?:(?:3[\d])|(?:4[5-79])|(?:5[0-35-9])|(?:6[5-7])|(?:7[0-8])|(?:8[\d])|(?:9[189]))\d{8}$/
 		let a = reg.test(e.detail.value) ? e.detail.value : false
-		if(a == false){
+		if (a == false) {
 			this.setData({
-			phoneError:'Please enter the correct cell phone number',
-			phone:''
+				phoneError: 'Please enter the correct cell phone number',
+				phone: ''
 			})
-		}else{
+		} else {
 			this.setData({
-			phone:a,
-			phoneError:''
-		})
+				phone: a,
+				phoneError: ''
+			})
 		}
 	},
-	bluraddress(e){
+	bluraddress(e) {
 		let reg = /^[A-Za-z0-9]+$/
 		let a = reg.test(e.detail.value) ? e.detail.value : false
-		if(a == false){
+		if (a == false) {
 			this.setData({
-			addressError:'Please enter the correct address',
-			address:''
+				addressError: 'Please enter the correct address',
+				address: ''
 			})
-		}else{
+		} else {
 			this.setData({
-			address:a,
-			addressError:''
-		})
+				address: a,
+				addressError: ''
+			})
 		}
 	},
-	blurcity(e){
+	blurcity(e) {
 		let reg = /^[A-Za-z0-9]+$/
 		let a = reg.test(e.detail.value) ? e.detail.value : false
-		if(a == false){
+		if (a == false) {
 			this.setData({
-			cityError:'Please enter the correct city',
-			city:''
+				cityError: 'Please enter the correct city',
+				city: ''
 			})
-		}else{
+		} else {
 			this.setData({
-			city:a,
-			cityError:''
-		})
+				city: a,
+				cityError: ''
+			})
 		}
 	},
-	blurpostcode(e){
+	blurpostcode(e) {
 		let reg = /^[1-9]\d{5}$/g
 		let a = reg.test(e.detail.value) ? e.detail.value : false
-		if(a == false){
+		if (a == false) {
 			this.setData({
-			postcodeError:'Please enter the correct postcode',
-			postcode:''
+				postcodeError: 'Please enter the correct postcode',
+				postcode: ''
 			})
-		}else{
+		} else {
 			this.setData({
-				postcode:a,
-				postcodeError:''
+				postcode: a,
+				postcodeError: ''
 			})
 		}
 	},
-	blurcountry(e){
+	blurcountry(e) {
 		this.setData({
-			country:e.detail.value
+			country: e.detail.value
 		})
 	},
 	//合并数据
-	onAddress(){
-		let arry = []
+	onAddress() {
 		let addresData = {
-			name:this.data.name,
-			phone:this.data.phone,
-			address:this.data.address,
-			city:this.data.city,
-			postcode:this.data.postcode,
-			country:this.data.country,
-			checked:this.data.checked
+			name: this.data.name,
+			phone: this.data.phone,
+			address: this.data.address,
+			city: this.data.city,
+			postcode: this.data.postcode,
+			country: this.data.country,
+			checked: this.data.checked
 		}
 		for (const key in addresData) {
-			if (!addresData[key]){
+			if (!addresData[key]) {
 				wx.showToast({
 					title: '地址格式不符合',
-					icon:'error'
+					icon: 'error'
 				})
-				return 
+				return
 			}
 		}
-		console.log(addresData);
-
-		arry.push(addresData)
-		wx.setStorageSync('arry', arry)
-		
-		wx.navigateTo({
+		let strData = wx.getStorageSync('arry')
+		let add = []
+		if(!strData){
+			add.push(addresData)
+			wx.setStorageSync('arry', JSON.stringify(add))
+		}else{
+			strData =  JSON.parse(strData)
+			strData.forEach(v => {
+				add.push(v)
+			});
+			add.push(addresData)
+			wx.setStorageSync('arry', JSON.stringify(add))
+		}
+		wx.reLaunch({
 			url: '/pages/MyAddress/MyAddress',
 		})
 	}

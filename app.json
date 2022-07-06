@@ -10,7 +10,13 @@
 		"pages/destination/destination",
 		"pages/MyAddress/MyAddress",
 		"pages/addHouse/addHouse",
-		"pages/MyDiscount/MyDiscount"
+		"pages/MyDiscount/MyDiscount",
+		"pages/reckon/reckon",
+		"pages/gatPreferential/gatPreferential",
+		"pages/activities/activities",
+		"pages/procedure/procedure",
+		"pages/notice/notice",
+		"pages/approve/approve"
   ],
   "window":{
     "backgroundTextStyle":"light",

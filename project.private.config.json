@@ -10,21 +10,7 @@
 			"list": [
 				{
 					"name": "",
-					"pathName": "pages/user/user",
-					"query": "",
-					"launchMode": "default",
-					"scene": null
-				},
-				{
-					"name": "",
-					"pathName": "pages/MyAddress/MyAddress",
-					"query": "",
-					"launchMode": "default",
-					"scene": null
-				},
-				{
-					"name": "",
-					"pathName": "pages/addHouse/addHouse",
+					"pathName": "pages/approve/approve",
 					"query": "",
 					"launchMode": "default",
 					"scene": null

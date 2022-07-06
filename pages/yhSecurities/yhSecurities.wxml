@@ -1,4 +1,4 @@
 <!--pages/yhSecurities/yhSecurities.wxml-->
-<view class="yhj" wx:for="{{image}}" wx:key="index">
+<view class="yhj" wx:for="{{image}}" wx:key="index" catchtap="onLngqu" data-yinfo="{{item}}">
   <image class="fei" src="{{item.img}}"></image>
 </view>

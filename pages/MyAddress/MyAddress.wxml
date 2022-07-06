@@ -1,4 +1,30 @@
+<!-- 引进utils工具 -->
+<wxs src="../../utils/filter.wxs" module="tools" />
 
+<block wx:if="{{arry.length > 0}}">
+	<view class="drrbox" wx:for="{{arry}}" wx:key="index">
+		<view style="display: flex;justify-content: space-between;">
+			<view class="box1"><view class="yuan">{{tools.portrait(item.name)}}</view></view>
+			<view class="box2">
+				<view style="display: flex;justify-content:flex-start;">
+					<view style="padding:20rpx 50rpx 20rpx 20rpx;">{{item.name}} </view>
+					<view style="padding:20rpx 50rpx 20rpx 10rpx;">{{item.phone}}</view>
+				</view>
+				<view class="dizhiibox">{{item.address}}</view>
+			</view>
+		</view >
+			
+		<view class="box3">
+			<van-checkbox checked-color="#f04f0e" value="{{ checked }}" bind:change="onChange">默认寄件地址</van-checkbox>
+			<view class="shanchubox">
+				<view><van-icon name="edit" size="40rpx" /></view>
+				<view><van-icon name="delete-o" size="40rpx" /></view>
+			</view>
+		</view>
+	</view>
+</block>
+
+<block wx:else>
 <van-empty image="/assets/userimg/wuadd.png" description="亲，您还未添加地址信息喔" />
 <view class="flightext" catchtap="onAddress">添加地址</view>
-
+</block>

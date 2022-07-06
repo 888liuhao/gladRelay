@@ -1,0 +1,15 @@
+/* pages/approve/approve.wxss */
+.van-checkbox{
+	padding: 0 90px;
+	padding-top: 20rpx;
+}
+.jjj{
+	margin-bottom: 150rpx;
+	width: 320rpx;
+	height: 90rpx;
+	color: #ffffff;
+	text-align: center;
+	line-height: 90rpx;
+	margin-top: 50rpx;
+	background-color:#13227a;
+}

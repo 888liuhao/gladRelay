@@ -1,66 +1,38 @@
 // pages/MyDiscount/MyDiscount.js
 Page({
-
-	/**
-	 * 页面的初始数据
-	 */
 	data: {
-
+		yhData:[
+			{z:'/yhuihuang.png',price:'15',type:'元',title:'新品优惠券',ntype:'抵扣劵',y:'',c:'/yhcebian.png'},
+			{z:'/yhuihuang.png',price:'8.8',type:'折',title:'新人优惠券',ntype:'折扣卷',y:'',c:'/yhcebian.png'},
+			{z:'/yongguo.png',price:'99',type:'元',title:'新人注册优惠券',ntype:'抵扣劵',y:'/yongguoyuan.png',c:'/yongguoce.png'},
+			{z:'/yongguo.png',price:'7.9',type:'折',title:'实名通过优惠券',ntype:'折扣卷',y:'/yongguoyuan.png',c:'/yongguoce.png'},
+			{z:'/shiixiao.png',price:'66',type:'元',title:'新品优惠券',ntype:'抵扣劵',y:'/shixiiaoyuan.png',c:'/shixiaobian.png'},
+			{z:'/shiixiao.png',price:'9',type:'折',title:'新品优惠券',ntype:'折扣卷',y:'/shixiiaoyuan.png',c:'/shixiaobian.png'},
+		],
+		show: false,
+		value:''
 	},
-
-	/**
-	 * 生命周期函数--监听页面加载
-	 */
-	onLoad(options) {
-
+	onShoww(){
+		this.setData({ show: true });
 	},
-
-	/**
-	 * 生命周期函数--监听页面初次渲染完成
-	 */
-	onReady() {
-
+	//关闭弹出层
+	onClose() {
+    this.setData({ show: false });
 	},
-
-	/**
-	 * 生命周期函数--监听页面显示
-	 */
-	onShow() {
-
+	//
+	bindfocus: function (e) {
+		console.log(e.detail.value);
 	},
-
-	/**
-	 * 生命周期函数--监听页面隐藏
-	 */
-	onHide() {
-
-	},
-
-	/**
-	 * 生命周期函数--监听页面卸载
-	 */
-	onUnload() {
-
-	},
-
-	/**
-	 * 页面相关事件处理函数--监听用户下拉动作
-	 */
-	onPullDownRefresh() {
-
-	},
-
-	/**
-	 * 页面上拉触底事件的处理函数
-	 */
-	onReachBottom() {
-
-	},
-
-	/**
-	 * 用户点击右上角分享
-	 */
-	onShareAppMessage() {
-
+	//
+	onbut(){
+		wx.showToast({
+			title: '兑换成功',
+			icon: 'success',
+			duration: 1500
+		})
+		this.setData({
+			show: false
+    })
 	}
+	
 })

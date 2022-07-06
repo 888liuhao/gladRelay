@@ -8,3 +8,45 @@
 	border-radius: 10rpx;
 	background-color: #13227a;
 }
+.drrbox{
+	height: 240rpx;
+	margin-bottom: 10rpx;
+	border-radius: 10rpx;
+	background-color: #ffffff;
+}
+.box1{
+	width: 100rpx;
+	height: 190rpx;
+}
+.yuan{
+	width: 70rpx;
+	margin-top: 50rpx;
+	margin-left: 10rpx;
+	height:70rpx;
+	line-height: 70rpx;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #ffa726;
+}
+.box2{
+	height: 190rpx;
+	width: 100%;
+}
+.box3{
+	height: 49rpx;
+	padding: 0 20rpx;
+	display: flex;
+	justify-content: space-between;
+}
+.dizhiibox{
+	padding-left: 20rpx;
+	width: 500rpx;
+	font-size: 14px;
+	color: #a2a9ac;
+	word-break:break-all;
+}
+.shanchubox{
+	width: 100rpx;
+	display: flex;
+	justify-content: space-between;
+}

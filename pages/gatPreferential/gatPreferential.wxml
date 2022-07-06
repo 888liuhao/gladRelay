@@ -1,0 +1,29 @@
+<!--pages/gatPreferential/gatPreferential.wxml-->
+<view class="box">
+	<view class="box1">
+		<view class="texbox"><text >￥</text>
+			<text style="font-size: 34px;font-weight: 700;">{{yhData.n}}</text>
+		</view>
+		<view style="font-size: 12px;text-align: center;">满￥{{yhData.m}}使用</view>
+	</view>
+
+	<view class="box2">
+		<view style="display: flex;justify-content: flex-start; margin-bottom: 30rpx;">
+			<view class="redbox">{{yhData.mk}}</view> <view>{{yhData.title}}</view>
+		</view>
+		<view>
+			<text style="color: #a1a0a0;">2018.04.11到期</text> <text style="padding-left: 20rpx;color: red;">(仅剩1天)</text>
+		</view>
+	</view>
+</view>
+<view class="tongzhibox">
+	<view>全场通用</view>
+	<view><van-icon name="arrow-down" /></view>
+</view>
+
+<view style="font-size: 22px;padding-left: 40rpx;margin-top: 40rpx;">使用须知</view>
+<view class="guizebox">
+	<image class="fei" src="/assets/images/guize.png"></image>
+</view>
+
+<view class="flightext" catchtap="onShoww">立即领取</view>

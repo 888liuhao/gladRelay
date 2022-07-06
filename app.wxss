@@ -8,8 +8,12 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+.filee{
+	display: flex;
+	justify-content: space-between;
+}
 page{
-  background-color: #f7f6f6;
+	background-color: #f7f6f6;
 }
 .fei{
   width: 100%;

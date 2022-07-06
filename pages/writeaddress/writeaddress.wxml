@@ -11,11 +11,15 @@
 <view class="xuanzedizhi">选择地址</view>
 <view class="padddd">
 <van-cell-group>
-  <van-field value="{{ name }}" bind:blur="blur" label="Name:" type="textarea" placeholder="请输入留言" autosize border="{{ false }}"/>
-  <van-field value="{{ phone }}" bind:blur="blur" label="Phone:" type="textarea" placeholder="请输入留言" autosize border="{{ false }}"/>
-<van-field value="{{ address }}" label="Address:" type="textarea" placeholder="请输入留言" autosize border="{{ false }}"/>
-  <van-field value="{{ city }}" label="City:" type="textarea" placeholder="请输入留言" autosize border="{{ false }}"/>
-<van-field value="{{postcode}}" label="Postcode:" type="textarea" placeholder="请输入留言" autosize border="{{ false }}"/>
+  <van-field value="{{name}}" bind:blur="blurname" label="Name:" type="textarea" placeholder="{{placeholder.pName}}" autosize error-message="{{nameError}}" />
+	
+	<van-field value="{{ phone }}" bind:blur="blurphone" label="Phone:" type="textarea" placeholder="{{placeholder.pPhone}}" autosize error-message="{{phoneError}}" />
+
+	<van-field value="{{ address }}" label="Address:" bind:blur="bluraddress" type="textarea" placeholder="{{placeholder.pAdd}}" autosize error-message="{{addressError}}" />
+
+	<van-field value="{{ city }}" label="City:" bind:blur="blurcity" type="textarea" placeholder="{{placeholder.pCity}}" autosize error-message="{{cityError}}" />
+
+	<van-field value="{{postcode}}" label="Postcode:" bind:blur="blurpostcode" type="textarea" placeholder="{{placeholder.pPostCode}}" autosize error-message="{{postcodeError}}" />
 </van-cell-group>
 </view>
 </view>

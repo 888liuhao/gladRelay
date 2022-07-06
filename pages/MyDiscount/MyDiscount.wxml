@@ -1,2 +1,29 @@
 <!--pages/MyDiscount/MyDiscount.wxml-->
-<text>pages/MyDiscount/MyDiscount.wxml</text>
+<view class="box" wx:for="{{yhData}}" wx:key="index">
+	<view class="filee">
+		<view class="youhuii">
+			<image class="fei" src="/assets/userimg{{item.z}}"></image>
+			<view class="box1">
+				<view class="jiage">{{item.price}}<text style="font-size: 18px;">{{item.type}}</text></view>
+				<view>满100元使用</view>
+			</view>
+		</view>
+
+		<view class="youhuiyou">
+			<view class="texta">{{item.title}}</view>
+			<view class="textb">2020.10.10 —— 2020.11.11</view>
+			<view class="textzhe">{{item.ntype}}</view>
+			<view class="yuanyuan"><image class="fei" src="/assets/userimg{{item.y}}"></image></view>
+			<view class="yhc"><image class="fei" src="/assets/userimg{{item.c}}"></image></view>
+		</view>
+	</view>
+</view>
+
+<view class="flightext" catchtap="onShoww">兑换优惠卷</view>
+
+<!-- 弹出层 -->
+<van-popup show="{{ show }}" bind:close="onClose">
+	<view class="titlell">兑换优惠券</view>
+	<input class="weui-input" bindinput="bindfocus" auto-focus placeholder="请输入优惠卷code，进行兑换"/>
+	<button type="primary" catchtap="onbut">兑换</button>
+</van-popup>

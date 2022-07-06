@@ -10,9 +10,9 @@ Page({
 		moreData:[
 			{title:'我的地址',img:'/assets/images/dingwei.png',url:'/pages/MyAddress/MyAddress'},
 			{title:'优惠卷',img:'/assets/images/sssyouhui.png',url:'/pages/MyDiscount/MyDiscount'},
-			{title:'活动中心',img:'/assets/userimg/huodong.png'},
-			{title:'转运流程',img:'/assets/userimg/buzhou.png'},
-			{title:'转运须知',img:'/assets/userimg/xuzhi.png'},
+			{title:'活动中心',img:'/assets/userimg/huodong.png',url:'/pages/activities/activities'},
+			{title:'转运流程',img:'/assets/userimg/buzhou.png',url:'/pages/procedure/procedure'},
+			{title:'转运须知',img:'/assets/userimg/xuzhi.png',url:'/pages/notice/notice'},
 			{title:'关于我们',img:'/assets/images/sssniu.png'}
 		]
 	},

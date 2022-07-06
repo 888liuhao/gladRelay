@@ -13,7 +13,7 @@
   <view class="flightext" catchtap="onShoww">立即转运</view>
 </view>
 
-<view class="dBox">
+<view class="dBox" bindtap="onxuzhi">
 <view class="box y1">
   <view class="ytext">转运须知</view>
   <text class="xtext">流程和注意事项</text>
@@ -23,7 +23,7 @@
   </view>
 </view>
 
-<view class="box y2">
+<view class="box y2" bindtap="onjisuan">
   <view class="ytext">运费估算</view>
   <text class="xtext">费用心中有数</text>
   <view class="file">

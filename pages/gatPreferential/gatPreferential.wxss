@@ -1,0 +1,56 @@
+/* pages/gatPreferential/gatPreferential.wxss */
+page{
+	background-color: #ffffff;
+}
+.box{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1rpx dashed #f6390d;
+	margin: 20rpx;
+	height: 220rpx;
+}
+.box1{
+	width: 300rpx;
+	box-sizing: border-box;
+	padding: 40rpx 0;
+	
+	height: 220rpx;
+	border-right: 1rpx dashed #f6390d;
+	text-align: center;
+}
+.box2{
+	width: 100%;
+	height: 220rpx;
+	padding: 50rpx 30rpx 0 30rpx;
+	box-sizing: border-box;
+}
+.texbox{
+	margin-bottom: 10rpx;
+}
+.redbox{
+	margin-right: 20rpx;
+	text-align: center;
+	width: 120rpx;
+	background-color: #f6390d;
+	color: #ffffff;
+}
+.tongzhibox{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 40rpx;
+}
+.guizebox{
+	height: 1200rpx;
+	margin: 40rpx;
+}
+.flightext{
+  width: 320rpx;
+  height: 90rpx;
+  color: #ffffff;
+  text-align: center;
+  line-height: 90rpx;
+	border-radius: 10rpx;
+	margin: auto;
+	margin-bottom: 150rpx;
+  background-color:#13227a;
+}

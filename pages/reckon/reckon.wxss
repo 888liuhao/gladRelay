@@ -1,0 +1,43 @@
+/* pages/reckon/reckon.wxss */
+.bioix{
+	height: 1145rpx;
+}
+.gusuan{
+	font-size: 24px;
+	font-weight: 700;
+	padding-left: 30rpx;
+	margin-top: 30rpx;
+}
+.box{
+	height: 200rpx;
+	width: 320rpx;
+	border-radius: 10px;
+	padding-top: 50rpx;
+	box-sizing: border-box;
+  margin: 30rpx 14rpx 0 14rpx;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px #888888;
+}
+.texbox{
+	background-color: #89c3f6;
+	color: #0881ec;
+}
+.texbox1{
+	background-color: #89ec9c;
+	color: #11af2f;
+}
+.box3{
+	height: 220rpx;
+	width: 710rpx;
+	color: #333333;
+	border-radius: 10px;
+	padding-top: 60rpx;
+	box-sizing: border-box;
+  margin: 30rpx 20rpx 0 20rpx;
+  background-color: #90aef6;
+  box-shadow: 0 0 10px #888888;
+}
+.center{
+	text-align: center;
+	margin-bottom: 10rpx;
+}
