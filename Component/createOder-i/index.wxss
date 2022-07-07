@@ -1,0 +1,54 @@
+/* Component/createOder-i/index.wxss */
+.box {
+  height: 350rpx;
+  margin: 40rpx;
+  background-color: #ffffff;
+  position: relative;
+  box-shadow: 0 0 10px #888888;
+}
+.drrbox{
+	height: 166rpx;
+	border-radius: 10rpx;
+	background-color: #ffffff;
+}
+.box1{
+	width: 100rpx;
+	height: 190rpx;
+}
+.box2{
+	height: 190rpx;
+	width: 100%;
+}
+.yuan{
+	width: 70rpx;
+	margin-top: 30rpx;
+	margin-left: 14rpx;
+	height:70rpx;
+	line-height: 70rpx;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #ffa726;
+}
+.dizhiibox{
+	padding-left: 20rpx;
+	width: 500rpx;
+	font-size: 12px;
+	color: #a2a9ac;
+	word-break:break-all;
+}
+.lan{
+	background-color: #13227a;
+}
+.lv{
+	background-color: #40b850;
+}
+.xiao{
+	width: 80%;
+	height: 80%;
+	margin-top: 6rpx;
+}
+.xiao1{
+	width: 70%;
+	height: 70%;
+	margin: 8rpx;
+}

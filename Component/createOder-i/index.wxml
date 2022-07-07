@@ -1,0 +1,28 @@
+<!--Component/createOder-i/index.wxml-->
+<view class="box">
+	<view class="drrbox">
+		<view style="display: flex;justify-content: space-between;">
+			<view class="box1"><view class="yuan lv"><image class="fei xiao" src="/assets/images/dingwei.png"></image></view></view>
+			<view class="box2">
+				<view style="display: flex;justify-content:flex-start;">
+					<view style="padding:20rpx 50rpx 20rpx 20rpx;">新希望仓库</view>
+					<view style="padding:20rpx 50rpx 20rpx 10rpx;">18688888888 <text style="color: #42b852;" catchtap="onfu">复制</text></view>
+				</view>
+				<view class="dizhiibox">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA</view>
+			</view>
+		</view >
+	</view>
+
+	<view class="drrbox">
+		<view style="display: flex;justify-content: space-between;">
+			<view class="box1"><view class="yuan  lan"><image class="fei xiao1" src="/assets/images/fangzi.png"></image></view></view>
+			<view class="box2">
+				<view style="display: flex;justify-content:flex-start;">
+					<view style="padding:20rpx 50rpx 20rpx 20rpx;">KK Liu</view>
+					<view style="padding:20rpx 50rpx 20rpx 10rpx;">18688888888</view>
+				</view>
+				<view class="dizhiibox">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA</view>
+			</view>
+		</view >
+	</view>
+</view>

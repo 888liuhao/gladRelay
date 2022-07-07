@@ -1,0 +1,12 @@
+<!--pages/createOder/createOder.wxml-->
+<createOder-i />
+
+<orderInfo-i />
+
+<orderXInfo-x />
+
+<!-- tabbar -->
+<view class="tabar">
+	<view class="boxx" style="color: #ffffff;background-color: #13227a;">联系客服</view>
+	<view class="boxx">取消订单</view>
+</view>

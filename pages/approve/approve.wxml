@@ -1,12 +1,18 @@
 <!--pages/approve/approve.wxml-->
 <notice-i />
+<block wx:if="{{num != 0}}">
 <view>
-	{{num}}
+	<text class="fffff">{{num}}</text>
+	<van-checkbox value="{{ checked }}" checked-color="#1cd66c">
+		勾选代表我同意以上协议
+	</van-checkbox>
+	<button class="jjj" disabled="{{status}}">秒后可勾选</button>
 </view>
+</block>
 
+<block wx:else>
 <van-checkbox value="{{ checked }}" checked-color="#1cd66c" bind:change="onChange">
 	勾选代表我同意以上协议
 </van-checkbox>
-
-
 <button class="jjj" disabled="{{status}}" bindtap="onquedin">确定</button>
+</block>

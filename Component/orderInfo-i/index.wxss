@@ -1,0 +1,81 @@
+/* Component/orderInfo-i/index.wxss */
+.box {
+  /* height: 350rpx; */
+	margin: 40rpx;
+	padding-bottom: 90rpx;
+  background-color: #ffffff;
+  position: relative;
+  box-shadow: 0 0 10px #888888;
+}
+.hongse{
+	height: 24rpx;
+	display: flex;
+	font-size: 14px;
+	color: red;
+	padding: 20rpx;
+	margin-bottom: 10rpx;
+	justify-content: flex-start;
+}
+.fei{
+  width: 100%;
+  height: 100%;
+}
+.xiao{
+	margin-right: 20rpx;
+	width: 36rpx;
+	height: 36rpx;
+}
+.sss{
+	display: flex;
+	justify-content: flex-start;
+}
+.weui-input{
+	border: 1rpx solid #c1c1c1;
+	border-radius: 10rpx;
+	padding-left: 20rpx;
+	height: 56rpx;
+}
+.liuyan{
+	border:1rpx solid #c1c1c1;
+	border-radius: 20rpx;
+	height: 200rpx;
+	margin: auto;
+	margin-top: 20rpx;
+	padding: 20rpx;
+	box-sizing: border-box;
+	margin-bottom: 20rpx;
+}
+.inpbox{
+	padding: 0 56rpx;
+}
+.inpitem{
+	border: 1rpx solid #c1c1c1;
+	padding-left: 20rpx;
+	width: 500rpx;
+	height: 56rpx;
+	border-radius: 10rpx;
+	margin-bottom: 30rpx;
+	margin-left: 20rpx;
+	position: relative;
+}
+.filee{
+	display: flex;
+	justify-content: flex-start;
+}
+.deleteClick{
+	position: absolute;
+	padding-top: 10rpx;
+	z-index: 4;
+	right: 60rpx;
+}
+.buchong{
+	text-align: center;
+	position: absolute;
+	right: 70rpx;
+	width: 244rpx;
+	line-height: 50rpx;
+	height: 50rpx;
+	color: #67c984;
+	border-radius: 40rpx;
+	border: 4rpx solid #67c984;
+}

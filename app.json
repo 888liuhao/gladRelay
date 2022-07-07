@@ -16,7 +16,10 @@
 		"pages/activities/activities",
 		"pages/procedure/procedure",
 		"pages/notice/notice",
-		"pages/approve/approve"
+		"pages/approve/approve",
+		"pages/createOder/createOder",
+		"pages/packageList/packageList",
+		"pages/insurance/insurance"
   ],
   "window":{
     "backgroundTextStyle":"light",

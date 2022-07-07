@@ -11,12 +11,12 @@ Page({
 			pPostCode: 'Please enter the postCode',
 			pCountry: 'Please enter the country'
 		},
-		name: 'qeq',
-		phone: '15218097467',
-		address: 'weqe',
-		city: 'ewqeeq',
-		postcode: '123456',
-		country: 'eeqwe',
+		name: '',
+		phone: '',
+		address: '',
+		city: '',
+		postcode: '',
+		country: '',
 		addresData: {},
 		//输入错误提示
 		nameError: '',

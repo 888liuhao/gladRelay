@@ -22,6 +22,7 @@
 			</view>
 		</view>
 	</view>
+	<view class="flightext mTop" catchtap="onAddress">添加地址</view>
 </block>
 
 <block wx:else>

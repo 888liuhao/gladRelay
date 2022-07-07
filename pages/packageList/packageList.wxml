@@ -1,0 +1,23 @@
+<!--pages/packageList/packageList.wxml-->
+<view class="boxxx">
+	<view class="baoguo">
+		<view>全部包裹</view>
+		<view class="a">查看您的全部包裹</view>
+	</view>
+
+	<view class="baoguo">
+		<view>退回包裹</view>
+		<view class="a">退回给商家或仓库处理</view>
+	</view>
+
+	<view class="baoguo">
+		<view>异常包裹</view>
+		<view class="a">违禁品</view>
+	</view>
+
+	<view class="baoguo">
+		<view>入库包裹</view>
+		<view class="a">已入库的包裹</view>
+	</view>
+</view>
+

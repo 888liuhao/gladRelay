@@ -1,0 +1,13 @@
+/* Component/orderXInfo-x/index.wxss */
+.box {
+	height: 450rpx;
+	margin: 40rpx;
+	padding: 30rpx;
+	margin-bottom: 150rpx;
+	box-sizing: border-box;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px #888888;
+}
+.mto{
+	margin-bottom: 20rpx;
+}

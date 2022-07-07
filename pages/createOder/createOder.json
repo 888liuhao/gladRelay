@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"createOder-i":"../../Component/createOder-i/index",
+		"orderInfo-i":"../../Component/orderInfo-i/index",
+		"orderXInfo-x":"../../Component/orderXInfo-x/index"
+	}
+}

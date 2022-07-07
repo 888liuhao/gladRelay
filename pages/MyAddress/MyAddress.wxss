@@ -14,6 +14,11 @@
 	border-radius: 10rpx;
 	background-color: #ffffff;
 }
+.mTop{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
 .box1{
 	width: 100rpx;
 	height: 190rpx;

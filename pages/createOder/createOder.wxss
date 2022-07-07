@@ -1,0 +1,15 @@
+/* pages/createOder/createOder.wxss */
+.tabar{
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	bottom: 0;
+}
+.boxx{
+	width:380rpx;
+	height: 100rpx;
+	font-size: 18px;
+	background-color: #c1c1c1;
+	text-align: center;
+	line-height: 100rpx;
+}

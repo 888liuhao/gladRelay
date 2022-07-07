@@ -1,0 +1,31 @@
+<!--Component/orderInfo-i/index.wxml-->
+<view class="box">
+	<view class="hongse"><view class="xiao"><image class="fei" src="/assets/images/honggantan.png"></image></view>
+		<text>快递全部到齐点击确认打包后，订单不可修改</text></view>
+	<view class="sss">
+		<text style="color: red;font-size: 22px;padding: 0 10rpx 0 70rpx;line-height: 60rpx;">*</text>
+		<text style="color: #13227a;font-size: 16px;font-weight: 700;padding-right: 30rpx;line-height: 58rpx;">快递个数</text>
+		<view>
+			<input class="weui-input" maxlength="1" disabled="{{disabled}}" value="{{number ? number :''}}" bindinput="bindinput" bindblur="bindblur" placeholder="请输入1-9个快递数"/>
+		</view>
+	</view>
+	<!-- <van-field value="{{ message }}" type="textarea" placeholder="请输入留言" autosize border="{{ false }}"/> -->
+	<textarea class="liuyan" placeholder="备注信息，例如：去掉包装盒等" />
+
+
+
+	<block wx:if="{{number > 0}}">
+		<view style="position: relative;">
+		<view wx:for="{{orderList}}" wx:key="id" class="inpbox">
+			<view class="filee">
+				<text style="line-height: 66rpx;">{{index+1}}.</text>
+				<input class="inpitem" type="number" data-items="{{item}}" disabled="{{item.disabled}}" value="{{item.mail}}" bindchange="itemBindchange"   />
+				<van-icon class="deleteClick" size="24px" color="#c1c1c1" data-inf="{{index}}" name="delete-o" catchtap="deleteClick" />
+			</view>
+		</view>
+		<view class="buchong" catchtap="onadd">补充快递单号</view>
+	</view>
+	</block>
+
+	<view></view>
+</view>
