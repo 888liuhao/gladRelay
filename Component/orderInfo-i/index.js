@@ -82,16 +82,22 @@ Component({
 		},
 		//增加快递单号
 		onadd(){
+			let _this = this
 			//用时间戳作为新增的id
 			let time = new Date().getTime()
 			let aa = false
-			let obj = {
-				status:'0',mail:'',id:time,disabled:aa
-			}
-			this.data.orderList.push(obj)
-			this.setData({
-				orderList:this.data.orderList,
-				number:Number(this.data.number) + 1
+			let obj = {status:'0',mail:'',id:time,disabled:aa}
+			wx.showModal({
+				title:'增加快递单号后，发往转运中心的快递个数+1，是否要继续',
+				success:({confirm}) =>{
+					if(confirm === true){
+						_this.data.orderList.push(obj)
+						_this.setData({
+							orderList:this.data.orderList,
+							number:Number(this.data.number) + 1
+						})
+					}
+				}
 			})
 			console.log(this.data.orderList);
 		}

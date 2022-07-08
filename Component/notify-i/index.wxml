@@ -1,0 +1,8 @@
+<!--Component/notify-i/index.wxml-->
+
+<van-notice-bar wrapable scrollable="{{ false }}" text="您的快递包裹已全部到达仓库，请及时确认捡货打包。"/>
+<view class="ooo"></view>
+
+
+<!-- <van-notice-bar wrapable scrollable="{{ false }}" text="转运账单已生成，请及时查看账单信息并支付"/>
+<view class="ooo"></view> -->

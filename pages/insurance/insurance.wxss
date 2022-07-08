@@ -41,3 +41,43 @@
 .textpppp{
 	height: 200rpx;
 }
+.jiine{
+	position: absolute;
+	top: 210rpx;
+	right: 110rpx;
+}
+.tabar{
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	bottom: 0;
+}
+.boxx{
+	width:380rpx;
+	height: 100rpx;
+	font-size: 18px;
+	background-color: #ffae35;
+	text-align: center;
+	line-height: 100rpx;
+}
+.van-popup{
+	width: 600rpx;
+	height: 450rpx;
+	padding: 20rpx;
+	border-radius: 10rpx
+}
+.feengxian{
+	text-align: center;
+	font-size: 18px;
+}
+.fyyy{
+	margin-top: 40rpx;
+}
+.boppp{
+	width: 230rpx;
+	line-height: 70rpx;
+	height: 70rpx;
+	color: #ffffff;
+	text-align: center;
+	background-color: #c1c1c1;
+}

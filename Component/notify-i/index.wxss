@@ -1,0 +1,5 @@
+/* Component/notify-i/index.wxss */
+.ooo{
+	width: 100%;
+	height: 60rpx;
+}

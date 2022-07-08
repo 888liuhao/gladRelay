@@ -1,3 +1,7 @@
 {
-	"usingComponents": {}
+	"usingComponents": {
+		"van-popup": "../../miniprogram/miniprogram_npm/@vant/weapp/popup/index",
+		"van-picker": "../../miniprogram/miniprogram_npm/@vant/weapp/picker/index"
+
+	}
 }

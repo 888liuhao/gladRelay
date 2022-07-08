@@ -79,3 +79,23 @@
 	border-radius: 40rpx;
 	border: 4rpx solid #67c984;
 }
+.statusku{
+	position: absolute;
+	border-radius: 10rpx;
+	margin-top: 16rpx;
+	background-color: #c0ed71;
+	color: #2b6736;
+	z-index: 4;
+	font-size: 12px;
+	right: 68rpx;
+}
+.kgzhong{
+	position: absolute;
+	color: #2b6736;
+	border-radius: 10rpx;
+	background-color: #bae66d;
+	margin-top: 16rpx;
+	font-size: 12px;
+	z-index: 4;
+	right: 150rpx;
+}

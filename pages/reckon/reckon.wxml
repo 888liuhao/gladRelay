@@ -5,9 +5,9 @@
 <view class="gusuan">预估运费</view>
 
 <view style="display: flex;justify-content: space-between;padding: 0 20rpx;">
-	<view class="box texbox">
+	<view class="box texbox" catchtap="onMold">
 		<view class="center">转运渠道</view>
-		<view class="center">普通货物</view>
+		<view class="center">{{mold}}</view>
 	</view>
 	<view class="box texbox1">
 		<view class="center">预估重量</view>
@@ -24,4 +24,11 @@
 	<view class="center">预估运费 (实际结果以订单为准)</view>
 	<view class="center">￥ 0.00</view>
 </view>
+
+
+<!-- 类型弹出层 -->
+<van-popup show="{{show}}" position="bottom" custom-style="height: 50%;">
+	<van-picker columns="{{ columns }}" bind:change="onChan" show-toolbar title="预选渠道" />
+
+</van-popup>
 

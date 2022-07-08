@@ -2,6 +2,8 @@
 	"usingComponents": {
 		"createOder-i":"../../Component/createOder-i/index",
 		"orderInfo-i":"../../Component/orderInfo-i/index",
-		"orderXInfo-x":"../../Component/orderXInfo-x/index"
+		"orderXInfo-x":"../../Component/orderXInfo-x/index",
+		"packBackData-i":"../../Component/packBackData-i/index",
+		"notify-i":"../../Component/notify-i/index"
 	}
 }

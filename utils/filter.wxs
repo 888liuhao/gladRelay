@@ -25,13 +25,12 @@ var portrait = function (str) {
 	return newstr
 }
 
-// function toBoo(value){
-// 	var val = value.indexOf('true') == 0 ? true : false
-// 	return val
-// }
-
+//保留两位小数
+var toFix = function (value) {
+	return value.toFixed(2) // 此处2为保留两位小数，保留几位小数，这里写几
+}
 module.exports = {
 	sub: sub,
 	portrait: portrait,
-	// toBoo: toBoo
+	toFix:toFix
 }

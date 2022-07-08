@@ -1,5 +1,9 @@
 <!--pages/createOder/createOder.wxml-->
+<notify-i />
+
 <createOder-i />
+
+<packBackData-i />
 
 <orderInfo-i />
 

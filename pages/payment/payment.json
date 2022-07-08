@@ -1,0 +1,10 @@
+{
+	"usingComponents": {
+		"van-popup": "../../miniprogram/miniprogram_npm/@vant/weapp/popup/index",
+		"van-cell": "../../miniprogram/miniprogram_npm/@vant/weapp/cell/index",
+		"van-cell-group": "../../miniprogram/miniprogram_npm/@vant/weapp/cell-group/index",
+		"van-icon": "../../miniprogram/miniprogram_npm/@vant/weapp/icon/index",
+		"van-checkbox": "../../miniprogram/miniprogram_npm/@vant/weapp/checkbox/index",
+  	"van-checkbox-group": "../../miniprogram/miniprogram_npm/@vant/weapp/checkbox-group/index"
+	}
+}

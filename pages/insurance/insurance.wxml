@@ -1,11 +1,13 @@
 <!--pages/insurance/insurance.wxml-->
+<wxs src="../../utils/filter.wxs" module="tools" />
 <view class="box">
 	<view>订单号：20220509140712345678</view>
 	<view class="fill opp">
 		<view class="bao"><image class="fei" src="/assets/images/baoxian.png"></image></view>
 		<view style="font-weight: 700;font-size: 18px;">保价</view>
 	</view>
-	<input type="number" class="inp" placeholder="请填写真实物品价格/人民币" />
+	<input type="number" class="inp" value="{{value}}" bindinput="bindinput" maxlength="10" placeholder="请填写真实物品价格/人民币" />
+	<view class="jiine" wx:if="{{value > 0}}">金额/人民币</view>
 </view>
 
 <view class="box" style="height: 280rpx;">
@@ -18,7 +20,7 @@
 		<view style="line-height: 72rpx;">丢失险（保价的3%）</view>
 		<van-switch checked="{{ checked }}" bind:change="onChange" active-color="#07c160" inactive-color="#ee0a24"/>
 	</view>
-	<view style="padding: 0 20rpx;margin-top: 20rpx;">保险费：¥ 30.00</view>
+	<view style="padding: 0 20rpx;margin-top: 20rpx;">保险费：¥ {{tools.toFix(protectCost)}}</view>
 </view>
 
 <view class="box" style="height: 340rpx;">
@@ -32,5 +34,22 @@
 		<view style="line-height: 72rpx;">关税险（保价的2%）</view>
 		<van-switch checked="{{ checkeds }}" bind:change="onChanges" active-color="#07c160" inactive-color="#ee0a24"/>
 	</view>
-	<view style="padding: 0 20rpx;margin-top: 20rpx;">保险费：¥ 30.00</view>
+	<view style="padding: 0 20rpx;margin-top: 20rpx;">保险费：¥ {{tools.toFix(wrotectCost)}}</view>
 </view>
+
+<!-- tabbar -->
+<view class="tabar">
+	<view class="boxx" style="color: #ffffff;background-color: #13227a;">联系客服</view>
+	<view class="boxx" bindtap="onNext">下一步</view>
+</view>
+<!-- 弹出层 -->
+<van-popup show="{{ show }}">
+	<view class="feengxian">风险告知书</view>
+	<text decode="{{true}}">尊敬的客户:
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您好，系统识别到您的订单未投保丢失保险，丢件的概率为万分之三，未购买丢失保险发生丢失的赔付原则为:退运费，按照实际货值赔付但不超过运费价值且最高不超过100美元。请悉知。
+			</text>
+	<view class="filee fyyy">
+		<view class="boppp" style="background-color: #e43d30;" catchtap="nonono">承担风险</view>
+		<view class="boppp" style="background-color: #07c160;" catchtap="excellent">购买保险</view>
+	</view>
+</van-popup>

@@ -10,7 +10,14 @@
 			"list": [
 				{
 					"name": "",
-					"pathName": "pages/insurance/insurance",
+					"pathName": "pages/reckon/reckon",
+					"query": "",
+					"launchMode": "default",
+					"scene": null
+				},
+				{
+					"name": "",
+					"pathName": "pages/payment/payment",
 					"query": "",
 					"launchMode": "default",
 					"scene": null

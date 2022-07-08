@@ -21,6 +21,10 @@
 				<text style="line-height: 66rpx;">{{index+1}}.</text>
 				<input class="inpitem" type="number" data-items="{{item}}" disabled="{{item.disabled}}" value="{{item.mail}}" bindchange="itemBindchange"   />
 				<van-icon class="deleteClick" size="24px" color="#c1c1c1" data-inf="{{index}}" name="delete-o" catchtap="deleteClick" />
+				<!-- <view class="statusku">已入库</view> -->
+				<!-- <view class="statusku" style="background-color: pink;color: #e6451e;">待入库</view> -->
+				<!-- <view class="statusku" style="background-color: #dd2c00;color: #36020f;">有异常</view> -->
+				<!-- <view class="kgzhong">1.28kg</view> -->
 			</view>
 		</view>
 		<view class="buchong" catchtap="onadd">补充快递单号</view>

@@ -19,7 +19,8 @@
 		"pages/approve/approve",
 		"pages/createOder/createOder",
 		"pages/packageList/packageList",
-		"pages/insurance/insurance"
+		"pages/insurance/insurance",
+		"pages/payment/payment"
   ],
   "window":{
     "backgroundTextStyle":"light",

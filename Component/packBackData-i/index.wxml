@@ -1,0 +1,43 @@
+<!--Component/packBackData/index.wxml-->
+<view class="box" style="font-size: 28rpx;">
+	<view class="lei">运费：¥ 138.00</view>
+	<view class="lei">附加费：¥ 0.00</view>
+	<view class="lei">称重重量：5.6 kg</view>
+	<view class="lei">分拣备注：<text class="ch">已拆封分拣，统一归类</text></view>
+	<view class="lei">打包备注：<text class="ch">东西太多，已统一打包加固</text></view>
+	<view class="lei">称重图片：</view>
+	<!-- 称重图片 -->
+	<scroll-view class="hua" scroll-x enable-flex>
+	<block wx:for="{{imaList}}" wx:key="*this">
+		<view class="tubox" bindtap="preview" data-img="{{imaList[0]}}"><image class="fei" src="{{item}}"></image></view>
+		<!-- <image bindtap="preview" data-img="{{item}}" class="fei tubox" src="{{item}}"></image> -->
+	</block>
+	</scroll-view>
+
+	<view class="lei">账单：</view>
+	<!-- 账单 -->
+	<view class="fill boxlll">
+		<view class="boxxxx"><image class="fei" src="/assets/images/tutututdabao.png"></image></view>
+		<view class="boxyyy">
+			<view style="color: black;font-size: 14px;margin-bottom: 6rpx;">包裹一</view>
+			<view>属性：普通货物</view>
+			<view>长宽高：12*5*5 CM</view>
+			<view>计费重量：1.25KG</view>
+			<view>计费方式：实际重量</view>
+			<view>运费：￥125</view>
+		</view>
+	</view>
+
+	<view class="fill boxlll">
+		<view class="boxxxx"><image class="fei" src="/assets/images/tutututdabao.png"></image></view>
+		<view class="boxyyy">
+			<view style="color: black;font-size: 14px;margin-bottom: 6rpx;">包裹一</view>
+			<view>属性：普通货物</view>
+			<view>长宽高：12*5*5 CM</view>
+			<view>计费重量：1.25KG</view>
+			<view>计费方式：实际重量</view>
+			<view>运费：￥125</view>
+		</view>
+	</view>
+	
+</view>
